@@ -1,0 +1,10 @@
+server:
+  port: 8004
+spring:
+  application:
+    name: cloud-provider-payment
+  cloud:
+    zookeeper:
+      connect-string: 43.155.101.151:2181
+      # docker安装zookeeper  docker run -d -e TZ="Asia/Shanghai" -p 2181:2181 -v $PWD/data:/data --name zookeeper --restart always zookeeper
+      # 使用zk命令行客户端连接zk docker run -it --rm --link zookeeper:zookeeper zookeeper zkCli.sh -server zookeeper
