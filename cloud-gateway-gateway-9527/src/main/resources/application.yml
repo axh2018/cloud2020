@@ -15,7 +15,7 @@ spring:
           uri: lb://cloud-payment-service
           predicates:
             Path=/payment/lb/**
-            # 限制条件
+            # 断言，限制条件
             #- After=2017-01-20T17:42:47.789-07:00[America/Denver]
             #- Before=2017-01-20T17:42:47.789-07:00[America/Denver]
             #- Cookie=username,zzyy
