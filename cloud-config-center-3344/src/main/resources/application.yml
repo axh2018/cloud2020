@@ -9,7 +9,7 @@ spring:
       server:
         git:
           skipSslValidation: true # 跳过ssl认证
-          uri: git@github.com:axh2018/springcloud-config.git
+          uri: https://gitee.com/axh2018/springcloud-config.git
           search-paths:
             - com.springcloud-config
       label: master
